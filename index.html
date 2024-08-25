@@ -186,7 +186,7 @@
                         <form onsubmit="sendEmail(); reset(); return false;" >
                         <input id="name" type="text" class="input-field" placeholder="Name" required>
                         <input id="phone" type="text" class="input-field" placeholder="Phone" required>
-                        <input id="email" type="text" class="input-field" placeholder="Email" required>
+                        <input id="email" type="text" class="input-field" placeholder="*9/" required>
                     </div>
                     <div class="text-area">
                         <textarea id="message1" placeholder="Message" required></textarea>
@@ -208,7 +208,7 @@
         const message = document.getElementById("message1")
         function sendEmail(){
             const bodyMessage =`Full Name :${name.value}<br><br> Email:${email.value} <br><br>
-            Phone Number:${phone.value }<br><br> Message:${message1.value}`
+            Phone Number:${phone.value }<br><br> Message==><br>${message1.value}`
             Email.send({
     Host : "smtp.elasticemail.com",
     Username : "hazem41gm@gmail.com",
