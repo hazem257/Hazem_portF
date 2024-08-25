@@ -209,7 +209,7 @@
         const message = document.getElementById("message1");
         function sendEmail(){
             const bodyMessage =`Full Name : ${name.value}<br><br> Email : ${email.value} <br><br>
-            Phone Number : ${phone.value }<br><br> Message==><br>${message1.value}`
+            Phone Number : ${phone.value }<br><br> Message : <br>${message1.value}`
             Email.send({
     Host : "smtp.elasticemail.com",
     Username : "hazem41gm@gmail.com",
@@ -217,7 +217,7 @@
     To : 'hazem41gm@gmail.com',
     From :'hazem41gm@gmail.com' ,
     Subject : "This New Message From",
-    Body : bodyMessage
+    Body : `<h3>${bodyMessage}</h3>`
 }).then(
   message => {
     if (message =="OK"){
