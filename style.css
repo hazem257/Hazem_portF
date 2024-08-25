@@ -633,7 +633,12 @@ footer{
     }
 
 }
-
+p span {
+    color: var( --text-color-third);
+}
+p samp {
+    color: var( --first-color); 
+}
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
