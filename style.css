@@ -458,11 +458,14 @@ h3{
 .form-control{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px;
     gap: 10px;
     width: 100%;
 }
 .form-inputs{
     display: flex;
+    justify-content: space-between;
     gap: 10px;
     width: 100%;
 }
@@ -470,6 +473,7 @@ h3{
     width: 50%;
     height: 55px;
     background: transparent;
+    margin-top: 12px;
     border: 2px solid #AAA;
     border-radius: 10px;
     padding-inline: 20px;
