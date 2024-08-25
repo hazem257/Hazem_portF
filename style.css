@@ -474,6 +474,8 @@ h3{
     border-radius: 10px;
     padding-inline: 20px;
     outline: none;
+    font-weight: bold;
+
 }
 textarea{
     width: 100%;
@@ -484,6 +486,8 @@ textarea{
     padding: 15px 20px;
     outline: none;
     resize: none;
+    font-weight: bolder;
+    
 }
 .form-button>.btn{
     display: flex;
