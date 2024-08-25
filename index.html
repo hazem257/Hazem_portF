@@ -184,9 +184,9 @@
                 <div class="form-control">
                     <div class="form-inputs">
                         <form onsubmit="sendEmail(); reset(); return false;" >
-                        <input id="name" type="text" class="input-field" placeholder="Name" required>
+                        <input id="name" type="text" class="input-field" placeholder="Name" required >
                         <input id="phone" type="text" class="input-field" placeholder="Phone" required>
-                        <input id="email" type="text" class="input-field" placeholder="*9/" required>
+                        <input id="email" type="text" class="input-field" placeholder="email"  required>
                     </div>
                     <div class="text-area">
                         <textarea id="message1" placeholder="Message" required></textarea>
@@ -201,11 +201,12 @@
           </div>
        </section>
        <script>
+        
         let form = document.querySelectorAll('form');
-        const name = document.getElementById("name")
-        const phone = document.getElementById("phone")
-        const email = document.getElementById("email")
-        const message = document.getElementById("message1")
+        const name = document.getElementById("name");
+        const phone = document.getElementById("phone");
+        const email = document.getElementById("email");
+        const message = document.getElementById("message1");
         function sendEmail(){
             const bodyMessage =`Full Name :${name.value}<br><br> Email:${email.value} <br><br>
             Phone Number:${phone.value }<br><br> Message==><br>${message1.value}`
@@ -225,19 +226,12 @@
   text: "Your Message Sent Success!",
   icon: "success"
 });
-    }else if(name.value==""||phone.value== ""||message1.value==""||email.value==""){
-        Swal.fire({
-  icon: "error",
-  title: "Oops...",
-  text: "Something went wrong!",
-  footer: '<a href="#">Why do I have this issue?</a>'
-});
     }
   }
 );
         }
       form.addEventListener("submit" ,(e)=>{
-        e.prevenDefault();+6
+        e.prevenDefault();
         
         sendEmail();
       })
