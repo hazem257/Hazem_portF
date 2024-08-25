@@ -189,7 +189,7 @@
                         <input id="email" type="text" class="input-field" placeholder="Email" required>
                     </div>
                     <div class="text-area">
-                        <textarea id="message" placeholder="Message" required></textarea>
+                        <textarea id="message1" placeholder="Message" required></textarea>
                     </div>
                     <div class="form-button">
                        <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
@@ -205,10 +205,10 @@
         const name = document.getElementById("name")
         const phone = document.getElementById("phone")
         const email = document.getElementById("email")
-        const message = document.getElementById("message")
+        const message = document.getElementById("message1")
         function sendEmail(){
             const bodyMessage =`Full Name :${name.value}<br> Email:${email.value} <br>
-            Phone Number:${phone.value }<br> Message:${message.value}`
+            Phone Number:${phone.value }<br> Message:${message1.value}`
             Email.send({
     Host : "smtp.elasticemail.com",
     Username : "hazem41gm@gmail.com",
@@ -218,7 +218,15 @@
     Subject : "This New Message From",
     Body : bodyMessage
 }).then(
-  message => alert(message)
+  message => {
+    if (message =="OK"){
+        Swal.fire({
+  title: "Success!",
+  text: "Your Message Sent Success!",
+  icon: "success"
+});
+    }
+  }
 );
         }
       form.addEventListener("submit" ,(e)=>{
@@ -267,9 +275,9 @@
     </footer>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="main.js"></script>
