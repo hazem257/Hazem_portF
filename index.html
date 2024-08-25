@@ -40,7 +40,7 @@
            <a target="_blank" href="/CV.pdf"><button class="btn">Download CV <i class="uil uil-file-alt"></i></button> </a>
         </div>
         <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            <i class="fa-solid fa-bars"onclick="myMenuFunction()"></i>
         </div>
       </nav>
 
@@ -183,20 +183,50 @@
              <div class="col">
                 <div class="form-control">
                     <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
+                        <form onsubmit="sendEmail(); reset(); return false;" >
+                        <input id="name" type="text" class="input-field" placeholder="Name" required>
+                        <input id="phone" type="text" class="input-field" placeholder="Phone" required>
+                        <input id="email" type="text" class="input-field" placeholder="Email" required>
                     </div>
                     <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
+                        <textarea id="message" placeholder="Message" required></textarea>
                     </div>
                     <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                       <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
                     </div>
+                </form>
                 </div>
              </div>
         
           </div>
        </section>
+       <script>
+        let form = document.querySelectorAll('form');
+        const name = document.getElementById("name")
+        const phone = document.getElementById("phone")
+        const email = document.getElementById("email")
+        const message = document.getElementById("message")
+        function sendEmail(){
+            const bodyMessage =`Full Name :${name.value}<br> Email:${email.value} <br>
+            Phone Number:${phone.value }<br> Message:${message.value}`
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "hazem41gm@gmail.com",
+    Password : "791974FE9F27A802124DE71A9D112E201CFE",
+    To : 'hazem41gm@gmail.com',
+    From :'hazem41gm@gmail.com' ,
+    Subject : "This New Message From",
+    Body : bodyMessage
+}).then(
+  message => alert(message)
+);
+        }
+      form.addEventListener("submit" ,(e)=>{
+        e.prevenDefault();
+        
+        sendEmail();
+      })
+       </script>
 
     </main>
 
@@ -237,6 +267,7 @@
     </footer>
 
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
