@@ -66,7 +66,10 @@ html{
     cursor: pointer;
     transition: .4s;
 }
-.btn>i{
+.btn >i{
+    margin-left: 10px;
+}
+.btn2 >i{
     margin-left: 10px;
 }
 .btn:hover{
@@ -247,6 +250,12 @@ nav{
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
+.Ti{
+    display: flex;
+}
+.Text1{
+    display: none;
+}
 .image img{
     width: 380px;
     height: 380px;
@@ -292,6 +301,21 @@ nav{
 .col{
     display: flex;
     width: 50%;
+    
+}
+.saraha{
+    width:100% ;
+    height: 300px;
+    border-radius: 30px;
+    display: none;
+    overflow: hidden;
+}
+.saraha2{
+    width:100% ;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
 }
 
 /* -- ## --- RESUABLE CSS -- ## -- */
@@ -500,10 +524,29 @@ textarea{
     background: var(--second-color);
     color: var(--color-white);
 }
+.btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-color);
+    color: var(--color-white);
+    font-weight: 600;
+    padding: 12px 20px;
+    background: #5D0E41;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
 .form-button>.btn:hover{
     background: #00B5E7;
 }
-.form-button i{
+.btn2:hover{
+    background-color: #FF204E;
+}
+.form-button i {
     font-size: 18px;
     rotate: -45deg;
 }
