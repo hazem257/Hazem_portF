@@ -123,10 +123,10 @@ let isorigin = true;
 re.addEventListener('click',()=>{
   if(isorigin){
     re4.setAttribute('href',newHref);
-    re.textContent='Disable Dark Mode';
+    re.textContent='Enable light Mode ☀️';
   }else{
     re4.setAttribute('href',origin);
-    re.textContent ='Enable Dark Mode'
+    re.textContent ='Enable Dark Mode 🌚'
   }
   isorigin = !isorigin
 })
