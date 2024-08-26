@@ -179,8 +179,9 @@
                     <p><i class="uil uil-phone"></i> Tel: 01159655999</p>
                 </div>
              </div>
-            
+             
              <div class="col">
+                
                 <div class="form-control">
                     <div class="form-inputs">
                         <form onsubmit="sendEmail(); reset(); return false;" >
@@ -194,11 +195,32 @@
                     <div class="form-button">
                        <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
                     </div>
+                    
                 </form>
+                <div>
+                    
+                    <iframe  id="lock" class="saraha" src="https://hazemgm.sarhne.com" frameborder="0"></iframe>
+                    <div class="form-button">
+                        <br>
+                        <center ><h3 class="Ti" id="Ti2">If You Want To Send Any Message In My Saraha Account :</h3></center>
+                     <center > <button onclick=" RunNow()" id="btn3" type="submit" class="btn2"> Saraha  <i class="uil uil-message"></i></button></center>
+                     </div>
+                  </div>
+                  <script>
+                    function RunNow(){
+                        const show = document.querySelector('.saraha');
+                        const show2 = document.querySelector('.Ti');
+                        show.classList.toggle('saraha2');
+                        show2.classList.toggle('Text1');
+                    }
+                  </script>
+                
                 </div>
+                
              </div>
         
           </div>
+        
        </section>
        <script>
         
