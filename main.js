@@ -8,7 +8,7 @@ function myMenuFunction(){
       menuBtn.className = "nav-menu";
     }
   }
-
+/*HAZOOOOOOMA*/
   window.onscroll = function() {headerShadow()};
 
   function headerShadow() {
@@ -30,9 +30,11 @@ function myMenuFunction(){
   }
 
 
+
 /* ----- TYPING EFFECT ----- */
+/* ----- HAZOOOOOOMA ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["Designer .","Youtuber .","Developer .", "Cyber security Engineering ."],
+    strings : ["Designer .","Youtuber .","Developer .", "Cyber security Engineering .",],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
@@ -112,6 +114,24 @@ function scrollActive() {
     }
   })
 }
+/*start dark mode in js*/
+let re4 = document.getElementById('mylink');
+let re = document.getElementById('dar');
+let origin = 'style.css';
+let newHref = 'style2.css';
+let isorigin = true;
+re.addEventListener('click',()=>{
+  if(isorigin){
+    re4.setAttribute('href',newHref);
+    re.textContent='Disable Dark Mode';
+  }else{
+    re4.setAttribute('href',origin);
+    re.textContent ='Enable Dark Mode'
+  }
+  isorigin = !isorigin
+})
 
 
 window.addEventListener('scroll', scrollActive)
+
+
