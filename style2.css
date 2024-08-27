@@ -523,6 +523,8 @@ h3{
     justify-content: space-between;
     gap: 10px;
     width: 100%;
+    color: white;
+
 }
 .input-field{
     width: 50%;
@@ -534,6 +536,7 @@ h3{
     padding-inline: 20px;
     outline: none;
     font-weight: bold;
+    color: white;
 
 }
 textarea{
@@ -546,6 +549,7 @@ textarea{
     outline: none;
     resize: none;
     font-weight: bolder;
+    color: white;
     
 }
 .form-button>.btn{
