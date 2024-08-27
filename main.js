@@ -118,7 +118,7 @@ function scrollActive() {
 let re4 = document.getElementById('mylink');
 let re = document.getElementById('dar');
 let origin = 'style.css';
-let newHref = 'dark.css';
+let newHref = 'style2.css';
 let isorigin = true;
 re.addEventListener('click',()=>{
   if(isorigin){
@@ -130,6 +130,13 @@ re.addEventListener('click',()=>{
   }
   isorigin = !isorigin
 })
+let inpro = document.getElementById('wait');
+inpro.onclick = function(){
+  Swal.fire({
+    text: "Our Courses In Progress ⚙️",
+    icon: "info"
+  });
+      }
 
 
 window.addEventListener('scroll', scrollActive)
