@@ -118,7 +118,7 @@ function scrollActive() {
 let re4 = document.getElementById('mylink');
 let re = document.getElementById('dar');
 let origin = 'style.css';
-let newHref = 'style2.css';
+let newHref = 'dark.css';
 let isorigin = true;
 re.addEventListener('click',()=>{
   if(isorigin){
