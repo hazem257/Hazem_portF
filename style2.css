@@ -4,16 +4,16 @@
 /* ----- VARIABLES ----- */
 :root{
     --body-color: #021526;
-    --color-white: white;
+    --color-white: #0f2437;
 
-    --text-color-second:#19A7CE;
-    --text-color-third: darkred;
+    --text-color-second:white;
+    --text-color-third: #F0A500;
 
-    --first-color:#29ADB2 ;
-    --first-color-hover: rgb(40, 91, 212);
+    --first-color:#F0A500 ;
+    --first-color-hover: #E94822;
 
-    --second-color: #FFB200;
-    --third-color: rgb(49, 192, 59);
+    --second-color: #F0A500;
+    --third-color: #F0A500;
     --first-shadow-color: rgba(0, 0, 0, 0.1);
     /*Sart Dark  Mode*/
     --dark-color1:#002244
@@ -27,7 +27,7 @@
 
 /*light mode*/
 .skills-list .red{
-    background-color: darkred;
+    background-color: #FF8225;
     cursor: pointer;
 }
 
@@ -213,7 +213,7 @@ nav{
 }
 .featured-text-card span{
     background: var(--third-color);
-    color: var(--color-white);
+    color: #FF5F00; 
     padding: 3px 8px;
     font-size: 12px;
     border-radius: 5px;
@@ -365,7 +365,7 @@ nav{
 h3{
     font-size: 20px;
     font-weight: 600;
-    color: var(--text-color-second);
+    color: #E6B31E;
     margin-bottom: 15px;
 }
 
@@ -442,7 +442,7 @@ h3{
 }
 .project-box>i{
     font-size: 50px;
-    color: #00B5E7;
+    color: #FCFAF1;
     margin-bottom: 25px;
 }
 .project-box label{
@@ -563,7 +563,7 @@ textarea{
     color: var(--color-white);
     font-weight: 600;
     padding: 12px 20px;
-    background: #5D0E41;
+    background: #E85C0D;
     border: none;
     border-radius: 10px;
     cursor: pointer;
