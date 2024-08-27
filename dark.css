@@ -213,7 +213,7 @@ nav{
 }
 .featured-text-card span{
     background: var(--third-color);
-    color: #FF5F00; 
+    color: whitesmoke; 
     padding: 3px 8px;
     font-size: 12px;
     border-radius: 5px;
