@@ -117,6 +117,7 @@ function scrollActive() {
 /*start dark mode in js*/
 let re4 = document.getElementById('mylink');
 let re = document.getElementById('dar');
+let re5 = document.getElementById('dar5');
 let origin = 'style.css';
 let newHref = 'dark.css';
 let isorigin = true;
@@ -124,12 +125,15 @@ re.addEventListener('click',()=>{
   if(isorigin){
     re4.setAttribute('href',newHref);
     re.textContent='Enable light Mode ☀️';
+
   }else{
     re4.setAttribute('href',origin);
     re.textContent ='Enable Dark Mode 🌚'
+
   }
   isorigin = !isorigin
 })
+
 let inpro = document.getElementById('wait');
 inpro.onclick = function(){
   Swal.fire({
@@ -137,6 +141,14 @@ inpro.onclick = function(){
     icon: "info"
   });
       }
+      /**/ 
+let count4 = document.getElementById('visiC');
+let downCount = document.getElementById('countUp')
+
+ downCount.onclick= function (){
+  count4.innerHTML = +1
+  
+}
 
 
 window.addEventListener('scroll', scrollActive)
