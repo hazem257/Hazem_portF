@@ -142,13 +142,7 @@ inpro.onclick = function(){
   });
       }
       /**/ 
-let count4 = document.getElementById('visiC');
-let downCount = document.getElementById('countUp')
 
- downCount.onclick= function (){
-  count4.innerHTML = +1
-  
-}
 
 
 window.addEventListener('scroll', scrollActive)
